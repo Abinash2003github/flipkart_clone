@@ -1,0 +1,538 @@
+:root {
+    --primary-color: #2874f0;
+    --body-color: #f1f2f4;
+    --element-color1: #b6b6b6;
+    --element-color2: #666666;
+    --element-color3: #3c3c3c;
+    --element-color-green: #108934;
+
+}
+
+/* ---------------------------------------- Item Menu ---------------------------------------- */
+.item-con {
+    margin: 10px 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-list {
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item {
+    margin: 5px;
+}
+
+.item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item a span {
+    margin: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item a img {
+    margin: 5px;
+    height: 100%;
+}
+
+/* ---------------------------------------- Slides ---------------------------------------- */
+.slider {
+    margin: 15px auto;
+    width: 98%;
+    height: 246px;
+    position: relative;
+}
+
+.slide-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    transition: all 1s ease-in-out;
+    position: absolute;
+}
+
+.prev-btn,
+.next-btn {
+    width: 35px;
+    height: 88px;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    color: var(--element-color1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.prev-btn {
+    position: absolute;
+    left: 0px;
+    top: 75px;
+    z-index: 1;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.next-btn {
+    position: absolute;
+    right: 0px;
+    top: 75px;
+    z-index: 1;
+    border-radius: 6px 0px 0px 6px;
+}
+
+/* ----------------------------------------only for Product List Mobile ---------------------------------------- */
+
+.product-list-mobile {
+    margin: 15px auto;
+    height: 350px;
+    width: 98%;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-part {
+    height: 100%;
+    width: 83%;
+    background: transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.right-part {
+    height: 100%;
+}
+
+.right-part img {
+    height: 100%;
+}
+
+
+/* ----------------------------------------only for Product List 1, 2 ---------------------------------------- */
+/* buttons */
+.mobile-scroll-btn,
+.product-scroll-btn {
+    height: 80px;
+    width: 35px;
+    background-color: white;
+    font-size: 16px;
+    color: var(--element-color2);
+    z-index: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#mobile-scroll-btn-left,
+#product1-scroll-left,
+#product2-scroll-left {
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.16);
+    /* initially display none */
+    display: none;
+
+}
+
+#mobile-scroll-btn-right,
+#product1-scroll-right,
+#product2-scroll-right {
+    position: absolute;
+    top: 30%;
+    right: 0px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.16);
+    /* initially display none */
+    display: block;
+}
+
+.product-list-1,
+.product-list-2 {
+    margin: 10px auto;
+    height: 325px;
+    width: 98%;
+    background: transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-list-con {
+    height: 75%;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+
+/* ----------- Common CSS of "Product-List-Mobile" and "Product-List 1 & 2" --------- */
+.mobile,
+.product {
+    margin: 0px 10px;
+    height: 100%;
+    min-width: 16%;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-part-head,
+.product-list-head {
+    height: max-content;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.left-part-head a,
+.product-list-head a {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-part-head a i,
+.product-list-head a i {
+    color: var(--primary-color);
+}
+
+.mobile-list-con,
+.product-list-con {
+    height: 75%;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.mobile-list,
+.product1-list,
+.product2-list {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.mobile img,
+.product img {
+    max-height: 75%;
+}
+
+.mobile div,
+.product div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ph-model,
+.model {
+    padding: 3px;
+    color: black;
+}
+
+.ph-price,
+.price {
+    padding: 0px;
+    font-weight: 500;
+    color: black;
+}
+
+
+/* --------------------------- banner  --------------------------- --------------------------- */
+
+.banner-con {
+    width: 98%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.banner-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.banner-row a {
+    display: block;
+    margin: 0px 4px;
+}
+
+.banner-row a img {
+    width: 100%;
+}
+
+/* ----------------------- Sliding Banner ----------------------- */
+.banner-slide {
+    background-color: white;
+    width: 98%;
+    margin: 10px auto;
+}
+
+.banner-slide-head {
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.banner-slide-head a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-slide-head span {
+    font-weight: 500;
+    color: black;
+}
+
+.banner-slide-head i {
+    color: var(--primary-color);
+}
+
+.banner-slide-list-con {
+    width: 100%;
+    height: 75%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.banner-scroll-btn {
+    height: 80px;
+    width: 35px;
+    background-color: white;
+    font-size: 16px;
+    color: var(--element-color2);
+    z-index: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#banner-slide1-btn-left {
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.16);
+    /* initially display none */
+    display: none;
+
+}
+
+#banner-slide1-btn-right {
+    position: absolute;
+    top: 30%;
+    right: 0px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.16);
+    /* initially display none */
+    display: block;
+}
+
+
+.banner1-slide-list {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.5s ease-in-out;
+}
+
+.banner1-slide-list a {
+    display: block;
+    width: 39%;
+    margin: 0px 10px 15px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.banner1-slide-list a img {
+    border-radius: 7px;
+    width: 100%;
+}
+
+/* ------------------ big banner --------------- */
+.big-banner {
+    width: 98%;
+    margin: 10px auto;
+}
+
+.big-banner a img {
+    width: 100%;
+}
+
+/* feature banner */
+
+.feature-banner-con {
+    width: 98%;
+    height: 650px;
+    margin: 10px auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-banner-left {
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.feature-banner-head {
+    width: 100%;
+}
+
+.feature-banner-head a {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 20px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-banner-head a i {
+    color: var(--primary-color);
+}
+
+.feature-banner-row-con {
+    width: 100%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.feature-banner-row {
+    box-sizing: border-box;
+    padding-bottom: 12px;
+    width: 100%;
+    height: 49%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.feature-banner-product {
+    height: 100%;
+    width: 45%;
+    border: 1px solid var(--element-color1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.feature-banner-product div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 85%;
+
+}
+
+.feature-banner-product img {
+    max-height: 75%;
+}
+
+.feature-product-model {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--element-color3);
+    letter-spacing: 1px;
+}
+
+.feature-product-price {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--element-color-green);
+    letter-spacing: 1px;
+}
+
+.feature-banner-right {
+    height: 100%;
+    width: 67%;
+}
+
+.feature-banner-right a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.feature-banner-right a img {
+    min-width: 133%;
+}

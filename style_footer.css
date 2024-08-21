@@ -1,0 +1,140 @@
+.footer_link_con {
+    color: #666;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 25px;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+.footer_link_head {
+    color: #565656;
+    margin-top: 14px;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer_link_head {
+    color: #565656;
+    margin-left: 4px;
+}
+
+.link_con {
+    box-sizing: border-box;
+    margin: 7px 0;
+    line-height: 1.5;
+}
+
+.link_subject {
+    color: #565656;
+    text-transform: uppercase;
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+.link {
+    color: #565656;
+    padding-right: 5px;
+    border-right: 1px solid #333;
+    font-size: 12px;
+}
+
+.link:hover {
+    color: #565656;
+    text-decoration: underline #565656 1px;
+}
+
+/* --------- footer main ---------- */
+.footer_main {
+    background-color: #212121;
+    width: 100%;
+    font-size: 12px;
+}
+
+/* footer main part1 */
+.footer_main_part1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+    padding: 40px 60px 0px;
+}
+
+.footer_menu_head,
+.footer_address_head {
+    margin-bottom: 12px;
+    color: #878787;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer_menu a,
+.footer_address_body p {
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.footer_menu a:hover {
+    text-decoration: underline white 1px;
+}
+
+.footer_address_body p span {
+    color: var(--primary-color);
+}
+
+.footer_address_body p span:hover {
+    text-decoration: underline var(--primary-color) 1px;
+}
+
+.footer_address_body {
+    margin-bottom: 12px;
+}
+
+.footer_address_border_left {
+    border-left: 1px solid #454d5e;
+    padding-left: 32px;
+}
+
+.footer_address_icon {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.footer_address_icon:hover {
+    cursor: pointer;
+}
+
+/* footer main part2 */
+
+.footer_main_part2 {
+    border-top: 1px solid #454d5e;
+    margin-top: 40px;
+    padding: 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_main_part2_nav {
+    font-size: 12px;
+}
+
+.footer_main_part2_nav i {
+    color: #e1bf0e;
+    padding-right: 5px;
+}
+
+.footer_main_part2_nav a {
+    color: #fff;
+}
+
+.footer_main_part2_nav a:hover {
+    text-decoration: underline white 1px;
+}

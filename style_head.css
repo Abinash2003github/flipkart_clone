@@ -1,0 +1,294 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #2874f0;
+    --body-color: #f1f2f4;
+    --hover-color-1: #faf7f7;
+
+}
+
+body {
+    background-color: var(--body-color);
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-con {
+    background-color: var(--primary-color);
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav {
+    height: inherit;
+    width: 80%;
+    max-width: 1248px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* ---------------------------------------- Logo ---------------------------------------- */
+.logo-con {
+    min-width: 137px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo a:hover{
+  text-decoration: underline white 1px;
+}
+/* ---------------------------------------- SearchBar ---------------------------------------- */
+#search-con {
+    margin-left: 12px;
+    height: 36px;
+    width: 540px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 23%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.4;
+    position: relative;
+}
+
+#search-bar {
+    margin: 0px 20px;
+    width: calc(100% - 32px);
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+
+#search-icon {
+    width: 32px;
+    font-size: 14px;
+    color: var(--primary-color);
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#recentSearch {
+    position: absolute;
+    top: 36px;
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: none;
+    border-radius: 0px 0px 18px 18px;
+}
+
+#search-con:focus-within #recentSearch {
+    display: block;
+}
+
+.recentList {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.recentList:hover {
+    background-color: rgb(232, 250, 255)
+}
+
+.recentList i {
+    height: 100%;
+    padding: 5px 5px;
+    color: grey;
+}
+
+/* ---------------------------------------- LogInButton ---------------------------------------- */
+.log-in-con {
+    position: relative;
+}
+
+.log-in {
+    display: block;
+    height: 100%;
+    margin: 15px 20px 15px 40px;
+    padding: 5px 40px;
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: .1px;
+
+    border-radius: 2px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 23%)
+}
+
+#log-in-hover {
+    position: absolute;
+    top: 55px;
+    left: -13px;
+    width: 230px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border-radius: 2px 2px 4px 4px;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 1;
+    display: none;
+    font-size: 14px;
+}
+
+.log-in-con:hover #log-in-hover {
+    display: block;
+}
+
+#log-in-hover div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#log-in-hover div a {
+    color: var(--primary-color);
+}
+
+#log-in-hover div a:hover {
+    text-decoration: underline;
+}
+
+.login-option {
+    border-top: 1px solid rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-option:hover {
+    background-color: var(--hover-color-1);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.login-option span {
+    padding: 15px;
+    color: #484848;
+}
+
+.login-option span i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+
+/* ------------------- all other head button css -----------------*/
+.nav-btn {
+    margin: 0px 20px;
+}
+
+.nav-btn a {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ------------ for more ---------*/
+
+.more-con {
+    margin: 15px 20px;
+    position: relative;
+}
+
+.more {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.more i {
+    transition: all 0.2s ease-in-out;
+}
+
+.more-con:hover .more i {
+    transform: rotate(-180deg);
+}
+
+#more-hover {
+    position: absolute;
+    top: 55px;
+    left: -88px;
+    width: 250px;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border-radius: 2px 2px 4px 4px;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 1;
+    font-size: 14px;
+    display: none;
+}
+
+.more-con:hover #more-hover {
+    display: block;
+}
+
+.more-list {
+    display: block;
+    padding: 15px;
+    border-top: 1px solid rgb(209, 209, 209);
+    ;
+}
+
+.more-list:hover {
+    background-color: var(--hover-color-1);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.more-list span {
+    font-size: 14px;
+    color: black;
+}
+
+.more-list span i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
